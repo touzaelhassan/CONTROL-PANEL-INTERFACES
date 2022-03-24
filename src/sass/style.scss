@@ -1,6 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Cairo', sans-serif;
-  box-sizing: border-box;
-}
+@import 'config/variables.scss';
+@import 'config/colors.scss';
+@import 'config/layout.scss';
+@import 'utilities/spacing.scss';
+@import 'base/global.scss';
+@import 'base/typography.scss';
