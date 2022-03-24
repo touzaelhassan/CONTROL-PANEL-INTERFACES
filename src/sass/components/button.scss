@@ -1,0 +1,45 @@
+.custom-btn {
+  display: inline-block;
+  border: 1px solid darken($color-white, 15%);
+  border-radius: 3px;
+  padding: 8px 16px;
+  color: $color-content;
+  background-color: $color-white;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  box-shadow: 0 1px 0 0 rgba(darken($color-primary, 15%), 0.05);
+}
+
+.custom-btn--primary {
+  border: 1px solid darken($color-primary, 5%);
+  color: $color-white;
+  background-color: $color-primary;
+
+  &:hover {
+    background-color: darken($color-primary, 5%);
+  }
+}
+
+.custom-btn--delete {
+  border: 1px solid darken($color-red, 5%);
+  color: $color-white;
+  background-color: $color-red;
+
+  &:hover {
+    background-color: darken($color-red, 5%);
+  }
+}
+
+.custom-btn--transparent {
+  border: 1px solid $color-content;
+  color: $color-white;
+  background-color: transparent;
+}
+
+.custom-btn--slim {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
