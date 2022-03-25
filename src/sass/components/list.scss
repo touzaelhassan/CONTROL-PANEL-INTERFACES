@@ -1,0 +1,25 @@
+.list-component {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.list__media {
+  width: auto;
+  height: 60px;
+}
+
+.list__data {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.list__actions {
+  border: 1px solid red;
+  margin-right: auto;
+  text-align: left;
+}

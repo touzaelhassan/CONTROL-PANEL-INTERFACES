@@ -111,6 +111,12 @@ module.exports = {
       chunks: ['js/main.js', 'js/banner'],
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/components/list.html',
+      filename: 'components/list.html',
+      chunks: ['js/main.js'],
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
 
     new CssMinimizerPlugin(),
