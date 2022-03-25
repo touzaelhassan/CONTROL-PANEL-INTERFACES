@@ -89,6 +89,11 @@ module.exports = {
       filename: 'components/card.html',
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/components/banner.html',
+      filename: 'components/banner.html',
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
 
     new CssMinimizerPlugin(),

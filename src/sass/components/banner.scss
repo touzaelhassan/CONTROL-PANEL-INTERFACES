@@ -1,0 +1,62 @@
+$color-banner : #47C1BF;
+$color-banner-light:#b7ecec;
+$color-banner-lighter:#e0f5f5;
+$color-banner-dark:#00848e;
+
+.banner-component {
+  @include e-card;
+  border-top: 5px solid $color-banner-dark;
+  padding: 20px 100px;
+  background-color: $color-banner-lighter;
+  position: relative;
+}
+
+.banner__title {
+  margin-bottom: 15px;
+  color: $color-text-subdued;
+  font-weight: normal;
+}
+
+.banner__description {
+  font-size: 14px;
+}
+
+.banner__action {
+  color: $color-text-subdued;
+  border-color: $color-text-subdued;
+}
+
+.banner__flag {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  display: block;
+  border-radius: 50%;
+  padding: 10px;
+  color: $color-banner-dark;
+  background-color: $color-banner-light;
+
+}
+
+.banner__close {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+}
+
+.banner-component>* {
+  transform: opacity 200ms ease;
+}
+
+.banner-component {
+  transition: transform 400ms ease-out 300ms;
+}
+
+.banner-collapse>* {
+  opacity: 0;
+}
+
+.banner-collapse {
+  transform: scaleY(0);
+}
