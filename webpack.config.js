@@ -4,12 +4,15 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: {
+    'js/main.js': './src/js/index.js',
+    'js/banner': './src/js/banner.js',
+  },
 
   output: {
     publicPath: '/',
     path: path.resolve(__dirname, 'build'),
-    filename: 'js/main.js',
+    filename: '[name].js',
     clean: true,
   },
 
@@ -82,16 +85,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
+      chunks: ['js/main.js'],
     }),
 
     new HtmlWebpackPlugin({
       template: './src/components/button.html',
       filename: 'components/button.html',
+      chunks: ['js/main.js'],
     }),
 
     new HtmlWebpackPlugin({
       template: './src/components/textfield.html',
       filename: 'components/textfield.html',
+      chunks: ['js/main.js'],
     }),
 
     new HtmlWebpackPlugin({
@@ -102,6 +108,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/components/banner.html',
       filename: 'components/banner.html',
+      chunks: ['js/main.js', 'js/banner'],
     }),
 
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
