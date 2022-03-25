@@ -1,0 +1,27 @@
+.tabs-component {
+  @include e-card;
+  width: 100%;
+}
+
+.tabs__control {
+  display: flex;
+}
+
+.tabs__tab {
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+}
+
+.tabs__tab.active {
+  border-bottom: 3px solid $color-primary;
+}
+
+.tabs__tabarea {
+  display: none;
+}
+
+.tabs__tabarea.active {
+  display: block;
+}
