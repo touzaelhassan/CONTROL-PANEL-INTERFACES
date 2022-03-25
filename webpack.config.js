@@ -73,11 +73,19 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
     }),
+
     new HtmlWebpackPlugin({
       template: './src/components/button.html',
       filename: 'components/button.html',
     }),
+
+    new HtmlWebpackPlugin({
+      template: './src/components/textfield.html',
+      filename: 'components/textfield.html',
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
+
     new CssMinimizerPlugin(),
   ],
 };
