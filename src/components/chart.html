@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>chart component</title>
+  </head>
+  <body>
+    <div class="component-container">
+      <div class="chart-component">
+        <header class="chart__header">
+          <div class="chart__title">
+            <h3>المبيعات</h3>
+            <span class="chart__date"> 26 مارس 2022</span>
+          </div>
+          <div
+            class="sammary-component sammary-component--small sammary-component--boxless"
+          >
+            <div class="sammary__data">
+              <span class="sammary__key">التغير الشهري</span>
+              <span class="sammary__value text-info">17,6%</span>
+            </div>
+            <div class="sammary__data">
+              <span class="sammary__key">المجموع</span>
+              <span class="sammary__value">$4536</span>
+            </div>
+            <div class="sammary__data">
+              <span class="sammary__key">آخر ثلاثين يوم</span>
+              <span class="sammary__value">$2656</span>
+            </div>
+          </div>
+          <div class="navigation__arrows">
+            <button class="custom-btn custom-btn--icon">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <button class="custom-btn custom-btn--icon">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+          </div>
+        </header>
+        <canvas
+          class="chart__data"
+          id="example-chart"
+          width="600"
+          height="300"
+        ></canvas>
+      </div>
+    </div>
+  </body>
+</html>

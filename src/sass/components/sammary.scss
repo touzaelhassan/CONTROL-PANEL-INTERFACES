@@ -19,3 +19,18 @@
 .sammary__key {
   font-weight: 500;
 }
+
+.sammary-component--boxless {
+  background: none;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.sammary-component--small {
+
+  .sammary__key,
+  .sammary__value {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}

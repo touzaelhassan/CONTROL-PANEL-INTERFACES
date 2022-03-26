@@ -9,6 +9,7 @@ module.exports = {
     'js/banner': './src/js/banner.js',
     'js/tabs': './src/js/tabs.js',
     'js/upload': './src/js/upload.js',
+    'js/chart': './src/js/chart.js',
   },
 
   output: {
@@ -159,6 +160,12 @@ module.exports = {
       template: './src/components/table.html',
       filename: 'components/table.html',
       chunks: ['js/main.js'],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/components/chart.html',
+      filename: 'components/chart.html',
+      chunks: ['js/main.js', 'js/chart'],
     }),
 
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),

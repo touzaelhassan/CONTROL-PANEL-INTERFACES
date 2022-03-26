@@ -1,0 +1,21 @@
+.chart-component {
+  @include e-card;
+  padding: 20px;
+  width: 100%;
+}
+
+.chart__header {
+  display: flex;
+  align-items: center;
+}
+
+.chart__title {
+  flex: 1;
+
+  .chart__date {
+    display: inline-block;
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+  }
+}
