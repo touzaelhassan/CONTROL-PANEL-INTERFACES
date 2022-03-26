@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 
 module.exports = {
   entry: {
@@ -166,6 +167,12 @@ module.exports = {
       template: './src/components/chart.html',
       filename: 'components/chart.html',
       chunks: ['js/main.js', 'js/chart'],
+    }),
+
+    new HtmlWebpackPartialsPlugin({
+      path: path.join(__dirname, './src/components/help.html'),
+      location: 'help',
+      template__filename: ['index.html'],
     }),
 
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
