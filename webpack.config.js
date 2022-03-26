@@ -149,6 +149,12 @@ module.exports = {
       chunks: ['js/main.js'],
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/components/sidebar.html',
+      filename: 'components/sidebar.html',
+      chunks: ['js/main.js'],
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
 
     new CssMinimizerPlugin(),
