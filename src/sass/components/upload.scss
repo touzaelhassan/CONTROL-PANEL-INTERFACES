@@ -1,0 +1,101 @@
+.upload-component {
+  @include e-card;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 40px;
+  width: 400px;
+  min-width: 100px;
+  min-height: 400px;
+}
+
+.upload__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upload__label {
+  margin-right: auto;
+  color: $color-link;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.upload__label--remove {
+  display: none;
+  color: $color-red;
+}
+
+.upload__body {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upload__image {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/upload.svg") no-repeat center;
+  background-size: 150px;
+
+  img {
+    display: inline;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.upload__field {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload__subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+}
+
+// Small Upload Component
+
+.upload-component--small {
+  min-width: initial;
+  min-height: initial;
+  box-shadow: none;
+  background: none;
+  padding: 0;
+
+  .upload__title {
+    margin-bottom: 20px;
+  }
+
+  .upload__body {
+    @include e-card;
+    width: 150px;
+    height: 150px;
+  }
+
+  .upload__label {
+    margin-left: auto;
+  }
+
+  .upload__label--remove {
+    margin-top: 15px;
+    margin-right: initial;
+  }
+
+
+}

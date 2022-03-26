@@ -124,6 +124,12 @@ module.exports = {
       chunks: ['js/main.js', 'js/tabs'],
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/components/upload.html',
+      filename: 'components/upload.html',
+      chunks: ['js/main.js'],
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
 
     new CssMinimizerPlugin(),

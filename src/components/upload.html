@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>upload</title>
+  </head>
+  <body>
+    <div class="component-container">
+      <div class="upload-component">
+        <header class="upload__header">
+          <h4 class="upload__title">صورة المنتج</h4>
+          <label for="upload-image" class="upload__label">ارفع الصورة</label>
+          <span class="upload__label upload__label--remove js-upload-remove"
+            >احدف الصورة</span
+          >
+        </header>
+        <div class="upload__body">
+          <div class="upload__image">
+            <img class="js-upload-placeholder" />
+          </div>
+          <input
+            type="file"
+            name="upload-image"
+            id="upload-image"
+            class="upload__field js-upload-value"
+          />
+          <span class="upload__subtitle">اسحب الصورة هنا لرفعها</span>
+        </div>
+      </div>
+      <div class="upload-component upload-component--small">
+        <header class="upload__header">
+          <h5 class="upload__title">صورة المستخدم</h5>
+        </header>
+        <div class="upload__body">
+          <label for="upload-image" class="upload__label">ارفع الصورة</label>
+          <img class="js-upload-placeholder" />
+          <input
+            type="file"
+            name="upload-image"
+            id="upload-image--small"
+            class="upload__field js-upload-value"
+          />
+        </div>
+        <span class="upload__label upload__label--remove js-upload-remove"
+          >احدف الصورة</span
+        >
+      </div>
+    </div>
+  </body>
+</html>
