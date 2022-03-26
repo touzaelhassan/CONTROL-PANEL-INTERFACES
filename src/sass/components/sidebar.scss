@@ -3,6 +3,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 100;
   width: $layout-sidebar;
   background-color: rgba($color-blue-dark, 0.1);
   display: flex;
@@ -12,15 +13,20 @@
 
 .sidebar__control {
   display: flex;
-  width: 53px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 13px;
+
+  a {
+    i {
+      font-size: 20px;
+    }
+  }
 }
 
 
 .sidebar__icon {
-  margin-bottom: 15px;
   width: 20px;
   height: 20px;
   font-size: 16px;
@@ -30,14 +36,22 @@
 }
 
 .sidebar__title {
-  margin-bottom: 20px;
-  color: $color-blue;
+  margin-bottom: 28px;
+
+  a {
+    color: #444;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
 }
 
 .sidebar__logo {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 20px;
+  margin-top: 11px;
+  margin-bottom: 20px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 5px solid $color-blue;
 }
 
 .sidebar__icon--bottom {
@@ -51,6 +65,7 @@
 }
 
 .sidebar__link {
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 10px;

@@ -1,0 +1,40 @@
+body {
+  height: 2000px;
+}
+
+.page-container {
+  padding-right: $layout-sidebar + 50px;
+  padding-left: 50px;
+}
+
+.main-page {
+  background: url("../images/confitti.svg") no-repeat top left;
+}
+
+.home-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 60px 0;
+}
+
+.welcome-tag {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.actions-component {
+  li {
+    a {
+      &:hover {
+        color: #fff;
+        background-color: #444;
+      }
+    }
+  }
+}
+
+.help-container {
+  text-align: center;
+}

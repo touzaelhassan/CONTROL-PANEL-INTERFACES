@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
@@ -19,5 +20,174 @@
     />
     <title>لوحة التحكم</title>
   </head>
-  <body></body>
+  <body>
+    <div class="page-container">
+      <div class="sidebar-component pt-5">
+        <div class="sidebar__control">
+          <a href="#" class="sidebar__icon sidebar__logo sidebar__icon--large">
+          </a>
+          <a href="#" class="sidebar__icon"><i class="fa-solid fa-plus"></i></a>
+          <a href="#" class="sidebar__icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a href="#" class="sidebar__icon"
+            ><i class="fa-solid fa-power-off"></i
+          ></a>
+          <a
+            href="#"
+            class="sidebar__icon sidebar__icon--bottom sidebar__icon--large sidebar__icon--image"
+          >
+            <img src="./images/profile.png" alt="profile" />
+          </a>
+        </div>
+        <div class="sidebar__menu">
+          <h2 class="sidebar__title"><a href="#">وكالة</a></h2>
+          <nav class="sidebar__navigation">
+            <a href="#" class="sidebar__link"
+              ><i class="fa-solid fa-sliders"></i> نظرة عامة</a
+            >
+            <a href="#" class="sidebar__link"
+              ><i class="fa-brands fa-product-hunt"></i> المنتجات</a
+            >
+            <a href="#" class="sidebar__link"
+              ><i class="fa-solid fa-user-group"></i> المستخدمين</a
+            >
+            <a href="#" class="sidebar__link"
+              ><i class="fa-solid fa-basket-shopping"></i> الطلبات</a
+            >
+          </nav>
+        </div>
+      </div>
+      <main class="main-page">
+        <header class="home-intro">
+          <h2 class="welcome-tag">
+            مرحبا حسن، أتمنى أنك تقضي يوما جميلا <br />
+            شاهد آخر ما حدث في متجرك
+          </h2>
+          <div class="sammary-component">
+            <div class="sammary__data">
+              <span class="sammary__value">34</span>
+              <span class="sammary__key">طلب</span>
+            </div>
+            <div class="sammary__data">
+              <span class="sammary__value">1440</span>
+              <span class="sammary__key">زائر</span>
+            </div>
+            <div class="sammary__data">
+              <span class="sammary__value">$2656</span>
+              <span class="sammary__key">مبيعات</span>
+            </div>
+          </div>
+        </header>
+        <ul class="actions-component mb-5">
+          <li class="action">
+            <span class="action__title">10 طلبات تحتاج المعالجة</span>
+            <a href="#" class="custom-btn action__link">مشاهدة الطلبات</a>
+          </li>
+          <li class="action">
+            <span class="action__title">5 رسائل تحتاج الإجابة</span>
+            <a href="#" class="custom-btn action__link">مشاهدة الرسائل</a>
+          </li>
+          <li class="action">
+            <span class="action__title">2 منتجات ضرورية على وشك النفاذ</span>
+            <a href="#" class="custom-btn action__link">مشاهدة المنتجات</a>
+          </li>
+        </ul>
+        <div class="card-component mb-5">
+          <h3 class="card__title">معلومات الشحن غير موجودة</h3>
+          <a class="custom-btn custom-btn--primary card__btn"
+            >ربط معلومات الشحن</a
+          >
+          <p class="card__description">
+            ستجد أمامك شركات شحن متنوعة أختر شركة الشحن اللي تريدها لمتجرك وكل
+            ما عليك هو الضغط على "ربط الخدمة". 3. ستظهر لك نافذة يتوفر بها
+            معلومات عامة عن شركة الشحن
+          </p>
+        </div>
+        <div class="banner-component mb-5">
+          <h3 class="banner__title">بوابة الدفع عبر بايونير متاحة</h3>
+          <p class="banner__description">
+            حسابك في Payoneer هو بوابة لفرص هائلة. سواء كنت تجري مدفوعات دولية
+            أو تتلقى الأموال
+          </p>
+          <button class="custom-btn custom-btn--transparent banner__action">
+            اكتشف المزيد
+          </button>
+          <i class="fa-solid fa-flag banner__flag"></i>
+          <i class="fa-solid fa-circle-xmark banner__close"></i>
+        </div>
+        <div class="chart-component mb-5">
+          <header class="chart__header">
+            <div class="chart__title">
+              <h3>المبيعات</h3>
+              <span class="chart__date"> 26 مارس 2022</span>
+            </div>
+            <div
+              class="sammary-component sammary-component--small sammary-component--boxless"
+            >
+              <div class="sammary__data">
+                <span class="sammary__key">التغير الشهري</span>
+                <span class="sammary__value text-info">17,6%</span>
+              </div>
+              <div class="sammary__data">
+                <span class="sammary__key">المجموع</span>
+                <span class="sammary__value">$4536</span>
+              </div>
+              <div class="sammary__data">
+                <span class="sammary__key">آخر ثلاثين يوم</span>
+                <span class="sammary__value">$2656</span>
+              </div>
+            </div>
+            <div class="navigation__arrows">
+              <button class="custom-btn custom-btn--icon">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+              <button class="custom-btn custom-btn--icon">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+            </div>
+          </header>
+          <canvas
+            class="chart__data"
+            id="example-chart"
+            width="600"
+            height="300"
+          ></canvas>
+        </div>
+        <div class="tabs-component js-tabs mb-5">
+          <div class="tabs__control">
+            <span class="tabs__tab js-tab-link active" data-index="orders"
+              >طلبات بحاجة لمراجعة</span
+            >
+            <span class="tabs__tab js-tab-link" data-index="products"
+              >منتجات على وشك النفاد</span
+            >
+            <span class="tabs__tab js-tab-link" data-index="clients"
+              >زبائن جدد</span
+            >
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__tabarea js-tabarea active" data-indexed="orders">
+              <div>Tab 1</div>
+            </div>
+            <div class="tabs__tabarea js-tabarea" data-indexed="products">
+              <div>Tab 2</div>
+            </div>
+            <div class="tabs__tabarea js-tabarea" data-indexed="clients">
+              <div>Tab 3</div>
+            </div>
+          </div>
+        </div>
+        <div class="help-container mb-5">
+          <div class="help-component">
+            <i class="fa-solid fa-circle-info help__icon"></i>
+            <div>
+              <span class="help__title">تعلم المزيد حول</span>
+              <a href="#" class="help__link">المنتجات</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

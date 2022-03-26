@@ -88,7 +88,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
-      chunks: ['js/main.js'],
+      chunks: ['js/main.js', 'js/banner', 'js/tabs', 'js/chart'],
     }),
 
     new HtmlWebpackPlugin({
