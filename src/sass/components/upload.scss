@@ -99,3 +99,27 @@
 
 
 }
+
+.upload-component.has-image {
+
+
+  .upload__label--remove {
+    display: block;
+  }
+
+  .upload__label.add {
+    display: none;
+  }
+
+  .upload__image {
+    background: none;
+
+    img {
+      display: block;
+    }
+  }
+
+  .upload__subtitle {
+    display: none;
+  }
+}

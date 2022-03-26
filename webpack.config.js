@@ -8,6 +8,7 @@ module.exports = {
     'js/main.js': './src/js/index.js',
     'js/banner': './src/js/banner.js',
     'js/tabs': './src/js/tabs.js',
+    'js/upload': './src/js/upload.js',
   },
 
   output: {
@@ -127,7 +128,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/components/upload.html',
       filename: 'components/upload.html',
-      chunks: ['js/main.js'],
+      chunks: ['js/main.js', 'js/upload'],
     }),
 
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),

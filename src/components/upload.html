@@ -15,10 +15,12 @@
   </head>
   <body>
     <div class="component-container">
-      <div class="upload-component">
+      <div class="upload-component js-upload">
         <header class="upload__header">
           <h4 class="upload__title">صورة المنتج</h4>
-          <label for="upload-image" class="upload__label">ارفع الصورة</label>
+          <label for="upload-image" class="upload__label add"
+            >ارفع الصورة</label
+          >
           <span class="upload__label upload__label--remove js-upload-remove"
             >احدف الصورة</span
           >
@@ -32,22 +34,26 @@
             name="upload-image"
             id="upload-image"
             class="upload__field js-upload-value"
+            accept="image/*"
           />
           <span class="upload__subtitle">اسحب الصورة هنا لرفعها</span>
         </div>
       </div>
-      <div class="upload-component upload-component--small">
+      <div class="upload-component upload-component--small js-upload">
         <header class="upload__header">
           <h5 class="upload__title">صورة المستخدم</h5>
         </header>
         <div class="upload__body">
-          <label for="upload-image" class="upload__label">ارفع الصورة</label>
+          <label for="upload-image" class="upload__label add"
+            >ارفع الصورة</label
+          >
           <img class="js-upload-placeholder" />
           <input
             type="file"
             name="upload-image"
             id="upload-image--small"
             class="upload__field js-upload-value"
+            accept="image/*"
           />
         </div>
         <span class="upload__label upload__label--remove js-upload-remove"
