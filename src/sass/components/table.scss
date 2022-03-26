@@ -1,0 +1,53 @@
+.table-component {
+  @include e-card;
+  width: 100%;
+  padding: 20px;
+}
+
+.table__title {
+  font-size: 20px;
+}
+
+.table__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  .table__actions {
+    flex: 1;
+
+    .table__navigation {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+.table__data {
+  margin: 20px 0;
+  width: 100%;
+  font-size: 14px;
+
+  tbody {
+    tr {
+      td {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+.table__footer {
+  .table__navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+}

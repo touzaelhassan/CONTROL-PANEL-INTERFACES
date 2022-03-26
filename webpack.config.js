@@ -155,6 +155,12 @@ module.exports = {
       chunks: ['js/main.js'],
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/components/table.html',
+      filename: 'components/table.html',
+      chunks: ['js/main.js'],
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
 
     new CssMinimizerPlugin(),
