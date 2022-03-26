@@ -131,6 +131,12 @@ module.exports = {
       chunks: ['js/main.js', 'js/upload'],
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/components/help.html',
+      filename: 'components/help.html',
+      chunks: ['js/main.js'],
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
 
     new CssMinimizerPlugin(),

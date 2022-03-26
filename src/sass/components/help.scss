@@ -1,0 +1,18 @@
+.help-component {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  border-radius: 40px;
+  border: 1px solid rgba(darken($color-primary, 30%), 0.15);
+  background-color: #FFF;
+}
+
+.help__icon {
+  color: $color-primary;
+  font-size: 20px;
+}
+
+.help__link {
+  color: $color-primary;
+}
