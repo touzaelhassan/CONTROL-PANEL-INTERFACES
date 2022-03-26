@@ -137,6 +137,12 @@ module.exports = {
       chunks: ['js/main.js'],
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/components/sammary.html',
+      filename: 'components/sammary.html',
+      chunks: ['js/main.js'],
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
 
     new CssMinimizerPlugin(),

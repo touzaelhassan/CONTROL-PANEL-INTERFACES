@@ -1,0 +1,21 @@
+.sammary-component {
+  @include e-card;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sammary__data {
+  display: flex;
+  flex-direction: column;
+}
+
+.sammary__value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.sammary__key {
+  font-weight: 500;
+}
