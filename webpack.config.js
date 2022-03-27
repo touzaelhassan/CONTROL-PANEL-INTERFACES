@@ -99,6 +99,12 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      template: './src/products.html',
+      filename: 'products.html',
+      chunks: ['js/main.js'],
+    }),
+
+    new HtmlWebpackPlugin({
       template: './src/components/button.html',
       filename: 'components/button.html',
       chunks: ['js/main.js'],

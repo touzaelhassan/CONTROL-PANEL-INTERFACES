@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Cairo -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>المنتجات</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="sidebar-component pt-5">
+        <div class="sidebar__control">
+          <a
+            href="./index.html"
+            class="sidebar__icon sidebar__logo sidebar__icon--large"
+          >
+          </a>
+          <a href="./add-product.html" class="sidebar__icon"
+            ><i class="fa-solid fa-plus"></i
+          ></a>
+          <a href="#" class="sidebar__icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a href="#" class="sidebar__icon"
+            ><i class="fa-solid fa-power-off"></i
+          ></a>
+          <a
+            href="#"
+            class="sidebar__icon sidebar__icon--bottom sidebar__icon--large sidebar__icon--image"
+          >
+            <img src="./images/profile.png" alt="profile" />
+          </a>
+        </div>
+        <div class="sidebar__menu">
+          <h2 class="sidebar__title"><a href="#">وكالة</a></h2>
+          <nav class="sidebar__navigation">
+            <a href="#" class="sidebar__link"
+              ><i class="fa-solid fa-sliders"></i> نظرة عامة</a
+            >
+            <a href="#" class="sidebar__link"
+              ><i class="fa-brands fa-product-hunt"></i> المنتجات</a
+            >
+            <a href="#" class="sidebar__link"
+              ><i class="fa-solid fa-user-group"></i> المستخدمين</a
+            >
+            <a href="#" class="sidebar__link"
+              ><i class="fa-solid fa-basket-shopping"></i> الطلبات</a
+            >
+          </nav>
+        </div>
+      </div>
+      <div class="single-page">
+        <header class="page-header">
+          <h1 class="page-title">المنتجات</h1>
+          <a href="./add-product.html" class="custom-btn">منتج جديد</a>
+        </header>
+
+        <div class="table-component">
+          <div class="table__header">
+            <h4 class="table__title">المنتجات</h4>
+            <button class="custom-btn custom-btn--delete custom-btn--slim">
+              حذف
+            </button>
+            <div class="table__actions">
+              <div class="table__navigation">
+                <span class="navigation__caption">6 من أصل 24</span>
+                <div class="navigation__arrows">
+                  <button class="custom-btn custom-btn--icon">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                  <button class="custom-btn custom-btn--icon">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="table__data table">
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" id="select-all" />
+                </th>
+                <th>
+                  <label for="select-all">تحديد الكل</label>
+                </th>
+                <th>المنتج</th>
+                <th>السعر الرئيسي</th>
+                <th>السعر المحلي</th>
+                <th>الكمية</th>
+                <th>المبيعات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="item-1" id="item-1" /></td>
+                <td><img src="./images/black-shirt.jpg" alt="item" /></td>
+                <td>قميص أسود</td>
+                <td>$19.19</td>
+                <td>179 درهم</td>
+                <td>13</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="item-1" id="item-2" /></td>
+                <td><img src="./images/black-shirt.jpg" alt="item" /></td>
+                <td>قميص أسود</td>
+                <td>$19.19</td>
+                <td>179 درهم</td>
+                <td>13</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="item-1" id="item-3" /></td>
+                <td><img src="./images/black-shirt.jpg" alt="item" /></td>
+                <td>قميص أسود</td>
+                <td>$19.19</td>
+                <td>179 درهم</td>
+                <td>13</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="item-1" id="item-4" /></td>
+                <td><img src="./images/black-shirt.jpg" alt="item" /></td>
+                <td>قميص أسود</td>
+                <td>$19.19</td>
+                <td>179 درهم</td>
+                <td>13</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="item-1" id="item-5" /></td>
+                <td><img src="./images/black-shirt.jpg" alt="item" /></td>
+                <td>قميص أسود</td>
+                <td>$19.19</td>
+                <td>179 درهم</td>
+                <td>13</td>
+                <td>34</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table__footer">
+            <div class="table__navigation">
+              <span class="navigation__caption">6 من أصل 24</span>
+              <div class="navigation__arrows">
+                <button class="custom-btn custom-btn--icon">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="custom-btn custom-btn--icon">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="help-container mt-5">
+          <div class="help-component">
+            <i class="fa-solid fa-circle-info help__icon"></i>
+            <div>
+              <span class="help__title">تعلم المزيد حول</span>
+              <a href="#" class="help__link">المنتجات</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
