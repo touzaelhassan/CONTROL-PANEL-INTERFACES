@@ -1,7 +1,19 @@
-.single-page {
-  border: 3px solid #000;
-}
-
 .page-header {
-  border: 3px solid red;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+
+  .page-title {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .draft-btn {
+    &:hover {
+      background-color: $color-blue;
+    }
+  }
 }
