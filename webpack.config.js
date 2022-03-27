@@ -93,6 +93,12 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      template: './src/add-user.html',
+      filename: 'add-user.html',
+      chunks: ['js/main.js', 'js/upload'],
+    }),
+
+    new HtmlWebpackPlugin({
       template: './src/add-product.html',
       filename: 'add-product.html',
       chunks: ['js/main.js', 'js/upload'],

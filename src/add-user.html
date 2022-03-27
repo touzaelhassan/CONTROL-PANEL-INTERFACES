@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Cairo -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>إضافة مستخدم</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="sidebar-component pt-5">
+        <div class="sidebar__control">
+          <a
+            href="./index.html"
+            class="sidebar__icon sidebar__logo sidebar__icon--large"
+          >
+          </a>
+          <a href="./add-product.html" class="sidebar__icon"
+            ><i class="fa-solid fa-plus"></i
+          ></a>
+          <a href="#" class="sidebar__icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a href="#" class="sidebar__icon"
+            ><i class="fa-solid fa-power-off"></i
+          ></a>
+          <a
+            href="#"
+            class="sidebar__icon sidebar__icon--bottom sidebar__icon--large sidebar__icon--image"
+          >
+            <img src="./images/profile.png" alt="profile" />
+          </a>
+        </div>
+        <div class="sidebar__menu">
+          <h2 class="sidebar__title"><a href="./index.html">وكالة</a></h2>
+          <nav class="sidebar__navigation">
+            <a href="#" class="sidebar__link"
+              ><i class="fa-solid fa-sliders"></i> نظرة عامة</a
+            >
+            <a href="./products.html" class="sidebar__link"
+              ><i class="fa-brands fa-product-hunt"></i> المنتجات</a
+            >
+            <a href="./users.html" class="sidebar__link"
+              ><i class="fa-solid fa-user-group"></i> المستخدمين</a
+            >
+            <a href="./orders.html" class="sidebar__link"
+              ><i class="fa-solid fa-basket-shopping"></i> الطلبات</a
+            >
+          </nav>
+        </div>
+      </div>
+      <div class="single-page">
+        <header class="page-header">
+          <h1 class="page-title">إضافة مستخدم</h1>
+          <button
+            type="submit"
+            class="custom-btn custom-btn--primary"
+            name="submit"
+            form="add-user"
+          >
+            إضافة مستخدم
+          </button>
+        </header>
+        <form class="form-component" id="add-user" name="add-user">
+          <div class="form__controls">
+            <div class="upload-component upload-component--small js-upload">
+              <header class="upload__header">
+                <h5 class="upload__title">صورة المستخدم</h5>
+              </header>
+              <div class="upload__body">
+                <label for="upload-image" class="upload__label add"
+                  >ارفع الصورة</label
+                >
+                <img class="js-upload-placeholder" />
+                <input
+                  type="file"
+                  name="upload-image"
+                  id="upload-image--small"
+                  class="upload__field js-upload-value"
+                  accept="image/*"
+                />
+              </div>
+              <span class="upload__label upload__label--remove js-upload-remove"
+                >احدف الصورة</span
+              >
+            </div>
+            <div class="form__row">
+              <div class="textfield--component">
+                <label for="username" class="textfield__label"
+                  >اسم المستخدم</label
+                >
+                <input
+                  type="text"
+                  class="textfield__input"
+                  id="username"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="textfield--component">
+                <label for="email" class="textfield__label">
+                  البريد الإلكتروني
+                </label>
+                <input
+                  type="text"
+                  class="textfield__input"
+                  id="email"
+                  placeholder=""
+                />
+              </div>
+              <div class="textfield--component">
+                <label for="email-2" class="textfield__label"
+                  >تأكيد البريد الإلكتروني</label
+                >
+                <input
+                  type="text"
+                  class="textfield__input"
+                  id="email-2"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="textfield--component">
+                <label for="password" class="textfield__label">
+                  كلمة المرور
+                </label>
+                <input
+                  type="password"
+                  class="textfield__input"
+                  id="password"
+                  placeholder=""
+                />
+              </div>
+              <div class="textfield--component">
+                <label for="password-2" class="textfield__label"
+                  >تأكيد كلمة المرور</label
+                >
+                <input
+                  type="password"
+                  class="textfield__input"
+                  id="password-2"
+                  placeholder=""
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+        <section class="help-container mt-5">
+          <div class="help-component">
+            <i class="fa-solid fa-circle-info help__icon"></i>
+            <div>
+              <span class="help__title">تعلم المزيد حول</span>
+              <a href="#" class="help__link">المنتجات</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
