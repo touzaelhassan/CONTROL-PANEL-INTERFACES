@@ -8,6 +8,10 @@
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
+.list-component--table {
+  display: table-row;
+}
+
 .list__media {
   width: auto;
   height: 60px;
@@ -19,7 +23,6 @@
 }
 
 .list__actions {
-  border: 1px solid red;
   margin-right: auto;
   text-align: left;
 }

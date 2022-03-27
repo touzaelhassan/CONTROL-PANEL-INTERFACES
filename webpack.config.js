@@ -111,6 +111,12 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      template: './src/orders.html',
+      filename: 'orders.html',
+      chunks: ['js/main.js'],
+    }),
+
+    new HtmlWebpackPlugin({
       template: './src/components/button.html',
       filename: 'components/button.html',
       chunks: ['js/main.js'],

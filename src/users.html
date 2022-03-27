@@ -66,9 +66,97 @@
       <div class="single-page">
         <header class="page-header">
           <h1 class="page-title">المستخدمين</h1>
-          <a href="./add-product.html" class="custom-btn">منتج جديد</a>
+          <a href="./add-product.html" class="custom-btn">مستخدم جديد</a>
         </header>
-
+        <div class="table-component">
+          <div class="table__header">
+            <h4 class="table__title">المستخدمين</h4>
+            <button class="custom-btn custom-btn--delete custom-btn--slim">
+              حذف
+            </button>
+            <div class="table__actions">
+              <div class="table__navigation">
+                <span class="navigation__caption">6 من أصل 24</span>
+                <div class="navigation__arrows">
+                  <button class="custom-btn custom-btn--icon">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                  <button class="custom-btn custom-btn--icon">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="table__data table">
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" id="select-all" />
+                </th>
+                <th>
+                  <label for="select-all">تحديد الكل</label>
+                </th>
+                <th>اسم المستخدم</th>
+                <th>البريد الإلكتروني</th>
+                <th>الطلبات</th>
+                <th>الكمية</th>
+                <th>المبيعات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="item-1" id="item-1" /></td>
+                <td><img src="./images/black-shirt.jpg" alt="item" /></td>
+                <td>أحمد</td>
+                <td>ahmed@gmail.com</td>
+                <td>4</td>
+                <td>13</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="item-1" id="item-2" /></td>
+                <td><img src="./images/black-shirt.jpg" alt="item" /></td>
+                <td>أحمد</td>
+                <td>ahmed@gmail.com</td>
+                <td>4</td>
+                <td>13</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="item-1" id="item-3" /></td>
+                <td><img src="./images/black-shirt.jpg" alt="item" /></td>
+                <td>أحمد</td>
+                <td>ahmed@gmail.com</td>
+                <td>4</td>
+                <td>13</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="item-1" id="item-4" /></td>
+                <td><img src="./images/black-shirt.jpg" alt="item" /></td>
+                <td>أحمد</td>
+                <td>ahmed@gmail.com</td>
+                <td>4</td>
+                <td>13</td>
+                <td>34</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table__footer">
+            <div class="table__navigation">
+              <span class="navigation__caption">6 من أصل 24</span>
+              <div class="navigation__arrows">
+                <button class="custom-btn custom-btn--icon">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="custom-btn custom-btn--icon">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <section class="help-container mt-5">
           <div class="help-component">
             <i class="fa-solid fa-circle-info help__icon"></i>
