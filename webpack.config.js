@@ -93,6 +93,12 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      template: './src/add-product.html',
+      filename: 'add-product.html',
+      chunks: ['js/main.js', 'js/upload'],
+    }),
+
+    new HtmlWebpackPlugin({
       template: './src/components/button.html',
       filename: 'components/button.html',
       chunks: ['js/main.js'],
@@ -167,12 +173,6 @@ module.exports = {
       template: './src/components/chart.html',
       filename: 'components/chart.html',
       chunks: ['js/main.js', 'js/chart'],
-    }),
-
-    new HtmlWebpackPartialsPlugin({
-      path: path.join(__dirname, './src/components/help.html'),
-      location: 'help',
-      template__filename: ['index.html'],
     }),
 
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),

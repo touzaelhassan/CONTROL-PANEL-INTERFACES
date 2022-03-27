@@ -1,0 +1,23 @@
+.form-component {
+  border: 3px solid red;
+  display: flex;
+  gap: 40px;
+}
+
+
+.form__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__row {
+  display: flex;
+  gap: 20px;
+
+  div {
+    label {
+      margin-bottom: 5px;
+    }
+  }
+}

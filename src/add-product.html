@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Cairo -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>إضافة منتج</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="sidebar-component pt-5">
+        <div class="sidebar__control">
+          <a
+            href="./index.html"
+            class="sidebar__icon sidebar__logo sidebar__icon--large"
+          >
+          </a>
+          <a href="./add-product.html" class="sidebar__icon"
+            ><i class="fa-solid fa-plus"></i
+          ></a>
+          <a href="#" class="sidebar__icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a href="#" class="sidebar__icon"
+            ><i class="fa-solid fa-power-off"></i
+          ></a>
+          <a
+            href="#"
+            class="sidebar__icon sidebar__icon--bottom sidebar__icon--large sidebar__icon--image"
+          >
+            <img src="./images/profile.png" alt="profile" />
+          </a>
+        </div>
+        <div class="sidebar__menu">
+          <h2 class="sidebar__title"><a href="#">وكالة</a></h2>
+          <nav class="sidebar__navigation">
+            <a href="#" class="sidebar__link"
+              ><i class="fa-solid fa-sliders"></i> نظرة عامة</a
+            >
+            <a href="#" class="sidebar__link"
+              ><i class="fa-brands fa-product-hunt"></i> المنتجات</a
+            >
+            <a href="#" class="sidebar__link"
+              ><i class="fa-solid fa-user-group"></i> المستخدمين</a
+            >
+            <a href="#" class="sidebar__link"
+              ><i class="fa-solid fa-basket-shopping"></i> الطلبات</a
+            >
+          </nav>
+        </div>
+      </div>
+      <div class="single-page">
+        <header class="page-header">
+          <h1 class="page-title">إضافة منتج</h1>
+          <button
+            type="submit"
+            class="custom-btn custom-btn--primary"
+            name="submit"
+            form="add-product"
+          >
+            إضافة منتج
+          </button>
+          <button
+            type="submit"
+            class="custom-btn"
+            name="draft"
+            form="add-product"
+          >
+            حفظ كمسودة
+          </button>
+        </header>
+        <form class="form-component" name="add-product">
+          <div class="upload-component js-upload form__upload">
+            <header class="upload__header">
+              <h4 class="upload__title">صورة المنتج</h4>
+              <label for="upload-image" class="upload__label add"
+                >ارفع الصورة</label
+              >
+              <span class="upload__label upload__label--remove js-upload-remove"
+                >احدف الصورة</span
+              >
+            </header>
+            <div class="upload__body">
+              <div class="upload__image">
+                <img class="js-upload-placeholder" />
+              </div>
+              <input
+                type="file"
+                name="upload-image"
+                id="upload-image"
+                class="upload__field js-upload-value"
+                accept="image/*"
+              />
+              <span class="upload__subtitle">اسحب الصورة هنا لرفعها</span>
+            </div>
+          </div>
+          <div class="form__controls">
+            <div class="form__row">
+              <div class="textfield--component">
+                <label for="product-name" class="textfield__label"
+                  >اسم المنتج</label
+                >
+                <input
+                  type="text"
+                  class="textfield__input"
+                  placeholder="مثلا : قميص أبيض"
+                  name="product-name"
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="textfield--component">
+                <label for="product-price" class="textfield__label"
+                  >سعر المنتج</label
+                >
+                <input
+                  type="number"
+                  class="textfield__input"
+                  placeholder="$"
+                  name="product-price"
+                />
+              </div>
+              <div class="textfield--component">
+                <label for="product-price-1" class="textfield__label"
+                  >السعر المحلي</label
+                >
+                <input
+                  type="number"
+                  class="textfield__input"
+                  placeholder="dh"
+                  name="product-price-1"
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="textfield--component">
+                <label for="product-description" class="textfield__label"
+                  >وصف المنتج</label
+                >
+                <textarea
+                  class="textfield__textarea"
+                  id="product-description"
+                  cols="30"
+                  rows="10"
+                  placeholder="..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="textfield--component">
+                <label for="width" class="textfield__label">العرض</label>
+                <input
+                  type="number"
+                  class="textfield__input"
+                  id="width"
+                  placeholder=""
+                />
+              </div>
+              <div class="textfield--component">
+                <label for="height" class="textfield__label">الإرتفاع</label>
+                <input
+                  type="number"
+                  class="textfield__input"
+                  id="height"
+                  placeholder=""
+                />
+              </div>
+              <div class="textfield--component">
+                <label for="depth" class="textfield__label">العمق</label>
+                <input
+                  type="number"
+                  class="textfield__input"
+                  id="depth"
+                  placeholder=""
+                />
+              </div>
+              <div class="textfield--component">
+                <label for="weight" class="textfield__label">الوزن</label>
+                <input
+                  type="number"
+                  class="textfield__input"
+                  id="weight"
+                  placeholder=""
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+        <section class="help-container mt-5">
+          <div class="help-component">
+            <i class="fa-solid fa-circle-info help__icon"></i>
+            <div>
+              <span class="help__title">تعلم المزيد حول</span>
+              <a href="#" class="help__link">المنتجات</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
