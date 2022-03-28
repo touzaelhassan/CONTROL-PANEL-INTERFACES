@@ -7,4 +7,79 @@
 @import 'base/typography.scss';
 @import 'components/components.scss';
 @import 'pages/index.scss';
-@import 'pages/add-product.scss'
+@import 'pages/add-product.scss';
+
+.sidebar-toggler-1 {
+
+  display: none;
+  margin-top: 20px;
+
+  i {
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+    background-color: #1768AC;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+.sidebar-toggler-2 {
+  display: none;
+
+  i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .page-container {
+    padding: 0;
+  }
+
+  .main-page {
+    padding: 0 20px;
+  }
+
+  .sidebar-component {
+    transform: translateX(100%);
+    background-color: #1768AC;
+    transition: transform 0.5s ease-in-out;
+
+    .sidebar__title {
+
+      a {
+        color: #eee;
+      }
+    }
+
+    .sidebar__logo {
+      border-color: #eee;
+    }
+
+    a {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .sidebar-component.active {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggler-1 {
+
+    display: block;
+
+  }
+
+  .sidebar-toggler-2 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+}

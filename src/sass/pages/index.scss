@@ -34,3 +34,10 @@
 .help-container {
   text-align: center;
 }
+
+
+@media screen and (max-width:768px) {
+  .main-page {
+    background: none;
+  }
+}
