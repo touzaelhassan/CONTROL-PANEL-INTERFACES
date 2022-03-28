@@ -35,9 +35,34 @@
   text-align: center;
 }
 
+@media screen and (max-width:992px) {
+  .home-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 60px 0;
+
+    .welcome-tag {
+      margin-bottom: 20px;
+      font-size: 25px;
+      text-align: center;
+      line-height: 1.7;
+    }
+  }
+}
 
 @media screen and (max-width:768px) {
   .main-page {
     background: none;
+  }
+
+  .home-intro {
+    margin-top: 40px;
+
+    .welcome-tag {
+      font-size: 20px;
+    }
   }
 }
