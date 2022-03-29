@@ -29,3 +29,25 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (max-width:992px) {
+  .card__description {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .card-component {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card__btn {
+      margin-top: 20px;
+    }
+
+    .card__description {
+      text-align: center;
+    }
+  }
+}
