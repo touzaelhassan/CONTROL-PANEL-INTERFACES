@@ -25,3 +25,18 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width:600px) {
+  .page-header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    .page-title {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

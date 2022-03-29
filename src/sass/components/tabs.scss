@@ -25,3 +25,25 @@
 .tabs__tabarea.active {
   display: block;
 }
+
+
+@media screen and (max-width:600px) {
+  .table__header {
+    .table__actions {
+      display: none;
+    }
+  }
+
+  .table__footer {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-component--table {
+    .list__actions {
+      display: none;
+    }
+  }
+}

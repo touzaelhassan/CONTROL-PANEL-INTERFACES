@@ -123,3 +123,12 @@
     display: none;
   }
 }
+
+@media screen and (max-width:600px) {
+  .upload-component--small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
