@@ -32,3 +32,25 @@
   border-radius: 50%;
   background-color: $color-brand;
 }
+
+@media screen and (max-width:600px) {
+  .action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .action__title {
+      margin: 0;
+    }
+
+    .action__title::before {
+      display: none;
+    }
+
+    .action__link {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
