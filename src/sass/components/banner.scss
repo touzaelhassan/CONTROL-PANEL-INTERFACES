@@ -61,3 +61,16 @@ $color-banner-dark:#00848e;
   transform: scaleY(0);
   transform-origin: 50% 0;
 }
+
+@media screen and (max-width:600px) {
+  .banner-component {
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .banner__flag {
+    right: 30px;
+  }
+}
