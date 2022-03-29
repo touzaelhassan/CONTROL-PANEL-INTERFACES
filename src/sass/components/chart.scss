@@ -19,3 +19,15 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width:768px) {
+  .chart__header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .chart__title {
+    margin-bottom: 20px;
+    order: 1;
+  }
+}
