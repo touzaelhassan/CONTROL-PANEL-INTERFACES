@@ -1,26 +1,53 @@
-.form-component {
-  display: flex;
-  gap: 80px;
-}
+ .form-component {
+   display: flex;
+   gap: 60px;
+ }
 
-.form__controls {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+ .form__controls {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
 
-.form__row {
-  display: flex;
-  gap: 20px;
+ .form__row {
+   display: flex;
+   gap: 20px;
 
-  div {
-    label {
-      margin-bottom: 5px;
-    }
-  }
-}
+   div {
+     label {
+       margin-bottom: 5px;
+     }
+   }
+ }
 
-::placeholder {
-  direction: rtl;
-  text-align: right;
-}
+ ::placeholder {
+   direction: rtl;
+   text-align: right;
+ }
+
+ @media screen and (max-width:1200px) {
+
+   .form-component {
+     display: flex;
+     gap: 40px;
+   }
+
+   .form__controls {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+   }
+ }
+
+ @media screen and (max-width:992px) {
+   .form-component {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .form__controls {
+     padding: 0 40px;
+   }
+ }
